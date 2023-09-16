@@ -86,5 +86,11 @@ var data = [
   
   // 10. Profession Count
   function getTotalProfessions() {
-    console.log(data.length);
+    var dev=0;
+    var admin=0;
+    data.forEach((person)=>{
+        if(person.profession=="admin")admin++;
+        else if(person.profession=="developer")dev++;
+    });
+    console.log("developers: ",dev,"admins: ",admin);
   }
