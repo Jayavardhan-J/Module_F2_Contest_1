@@ -79,8 +79,8 @@ var data = [
     var index=data.findIndex((person)=>{
         return person.name==="John";
     });
-    var newProfession=prompt("Enter the new profession: ");
-    if(index!=-1)data[index].profession=newProfession;
+    
+    if(index!=-1)data[index].profession="manager";
     console.log(data[index]);
   }
   
